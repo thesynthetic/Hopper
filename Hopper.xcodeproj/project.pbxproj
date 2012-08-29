@@ -20,6 +20,7 @@
 		705C0ECD15EDA25F00DE3866 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C0ECC15EDA25F00DE3866 /* SecondViewController.m */; };
 		705C0ECF15EDA25F00DE3866 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 705C0ECE15EDA25F00DE3866 /* second.png */; };
 		705C0ED115EDA25F00DE3866 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 705C0ED015EDA25F00DE3866 /* second@2x.png */; };
+		705C0ED915EDA5AD00DE3866 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705C0ED715EDA59A00DE3866 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		705C0ECC15EDA25F00DE3866 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		705C0ECE15EDA25F00DE3866 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		705C0ED015EDA25F00DE3866 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		705C0ED715EDA59A00DE3866 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705C0ED915EDA5AD00DE3866 /* MapKit.framework in Frameworks */,
 				705C0EB015EDA25F00DE3866 /* UIKit.framework in Frameworks */,
 				705C0EB215EDA25F00DE3866 /* Foundation.framework in Frameworks */,
 				705C0EB415EDA25F00DE3866 /* CoreGraphics.framework in Frameworks */,
@@ -78,6 +81,7 @@
 		705C0EAE15EDA25F00DE3866 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				705C0ED715EDA59A00DE3866 /* MapKit.framework */,
 				705C0EAF15EDA25F00DE3866 /* UIKit.framework */,
 				705C0EB115EDA25F00DE3866 /* Foundation.framework */,
 				705C0EB315EDA25F00DE3866 /* CoreGraphics.framework */,
@@ -88,9 +92,9 @@
 		705C0EB515EDA25F00DE3866 /* Hopper */ = {
 			isa = PBXGroup;
 			children = (
+				705C0EC115EDA25F00DE3866 /* MainStoryboard.storyboard */,
 				705C0EBE15EDA25F00DE3866 /* AppDelegate.h */,
 				705C0EBF15EDA25F00DE3866 /* AppDelegate.m */,
-				705C0EC115EDA25F00DE3866 /* MainStoryboard.storyboard */,
 				705C0EC415EDA25F00DE3866 /* FirstViewController.h */,
 				705C0EC515EDA25F00DE3866 /* FirstViewController.m */,
 				705C0EC715EDA25F00DE3866 /* first.png */,
