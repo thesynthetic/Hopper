@@ -23,11 +23,11 @@
             </objects>
             <point key="canvasLocation" x="661" y="-153"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="kWS-Fu-MVQ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XF0-Av-zQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="nbq-4I-3nU" sceneMemberID="viewController">
+                <viewController id="nbq-4I-3nU" customClass="MapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u0d-Pc-5u5">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -48,6 +48,21 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="uAB-Rb-ARn">
+                                <rect key="frame" x="9" y="328" width="29" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateLocationButton:" destination="nbq-4I-3nU" eventType="touchUpInside" id="ZkU-Bq-xtZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -59,6 +74,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="List" id="sJq-h2-kuO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="map" destination="54L-tL-x5W" id="Jtl-kk-qAo"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1113" y="-153"/>
@@ -90,7 +108,7 @@
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="6:35PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h4B-8E-Vil">
-                                                    <rect key="frame" x="266" y="11" width="44" height="21"/>
+                                                    <rect key="frame" x="268" y="16" width="42" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,7 +134,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="KAJ-t3-5Qo"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1412" y="516"/>
+            <point key="canvasLocation" x="1118" y="494"/>
         </scene>
         <!--Navigation Controller - Messages-->
         <scene sceneID="jKf-WM-uOv">
@@ -134,7 +152,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="944" y="516"/>
+            <point key="canvasLocation" x="654" y="494"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hfN-A0-atT">
@@ -170,6 +188,15 @@
             <point key="canvasLocation" x="132" y="180"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="updateLocationButton:"/>
+                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

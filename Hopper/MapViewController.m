@@ -6,18 +6,26 @@
 //  Copyright (c) 2012 Ryan Hittner. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "MapViewController.h"
 
-@interface FirstViewController ()
+@interface MapViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation MapViewController
+
+@synthesize locationManager;
+@synthesize map;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.delegate = self;
+    [locationManager startUpdatingLocation];
 }
 
 - (void)viewDidUnload
@@ -29,6 +37,31 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+#pragma mark - CoreLocationDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+    
+    CLLocationCoordinate2D coordinate = [newLocation coordinate];
+    float longitude = coordinate.longitude;
+    float latitude = coordinate.latitude;
+    
+    NSLog(@"dLongitude : %f",longitude);
+    NSLog(@"dLatitude : %f", latitude);
+    [map setShowsUserLocation:YES];
+    [map setCenterCoordinate:coordinate animated:YES];
+    [locationManager stopUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    NSLog(@"Hey");
+}
+
+#pragma mark - Buttons
+
+- (IBAction)updateLocationButton:(id)sender{
+    [locationManager startUpdatingLocation];
 }
 
 @end

@@ -14,13 +14,14 @@
 		705C0EBC15EDA25F00DE3866 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C0EBB15EDA25F00DE3866 /* main.m */; };
 		705C0EC015EDA25F00DE3866 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C0EBF15EDA25F00DE3866 /* AppDelegate.m */; };
 		705C0EC315EDA25F00DE3866 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 705C0EC115EDA25F00DE3866 /* MainStoryboard.storyboard */; };
-		705C0EC615EDA25F00DE3866 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C0EC515EDA25F00DE3866 /* FirstViewController.m */; };
+		705C0EC615EDA25F00DE3866 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C0EC515EDA25F00DE3866 /* MapViewController.m */; };
 		705C0EC815EDA25F00DE3866 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 705C0EC715EDA25F00DE3866 /* first.png */; };
 		705C0ECA15EDA25F00DE3866 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 705C0EC915EDA25F00DE3866 /* first@2x.png */; };
 		705C0ECD15EDA25F00DE3866 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705C0ECC15EDA25F00DE3866 /* SecondViewController.m */; };
 		705C0ECF15EDA25F00DE3866 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 705C0ECE15EDA25F00DE3866 /* second.png */; };
 		705C0ED115EDA25F00DE3866 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 705C0ED015EDA25F00DE3866 /* second@2x.png */; };
 		705C0ED915EDA5AD00DE3866 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705C0ED715EDA59A00DE3866 /* MapKit.framework */; };
+		708D373215F0616D00985E53 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708D372F15F0615F00985E53 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +36,8 @@
 		705C0EBE15EDA25F00DE3866 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		705C0EBF15EDA25F00DE3866 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		705C0EC215EDA25F00DE3866 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		705C0EC415EDA25F00DE3866 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		705C0EC515EDA25F00DE3866 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		705C0EC415EDA25F00DE3866 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		705C0EC515EDA25F00DE3866 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		705C0EC715EDA25F00DE3866 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		705C0EC915EDA25F00DE3866 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		705C0ECB15EDA25F00DE3866 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		705C0ECE15EDA25F00DE3866 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		705C0ED015EDA25F00DE3866 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		705C0ED715EDA59A00DE3866 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		708D372F15F0615F00985E53 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708D373215F0616D00985E53 /* CoreLocation.framework in Frameworks */,
 				705C0ED915EDA5AD00DE3866 /* MapKit.framework in Frameworks */,
 				705C0EB015EDA25F00DE3866 /* UIKit.framework in Frameworks */,
 				705C0EB215EDA25F00DE3866 /* Foundation.framework in Frameworks */,
@@ -81,6 +84,7 @@
 		705C0EAE15EDA25F00DE3866 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				708D372F15F0615F00985E53 /* CoreLocation.framework */,
 				705C0ED715EDA59A00DE3866 /* MapKit.framework */,
 				705C0EAF15EDA25F00DE3866 /* UIKit.framework */,
 				705C0EB115EDA25F00DE3866 /* Foundation.framework */,
@@ -95,8 +99,8 @@
 				705C0EC115EDA25F00DE3866 /* MainStoryboard.storyboard */,
 				705C0EBE15EDA25F00DE3866 /* AppDelegate.h */,
 				705C0EBF15EDA25F00DE3866 /* AppDelegate.m */,
-				705C0EC415EDA25F00DE3866 /* FirstViewController.h */,
-				705C0EC515EDA25F00DE3866 /* FirstViewController.m */,
+				705C0EC415EDA25F00DE3866 /* MapViewController.h */,
+				705C0EC515EDA25F00DE3866 /* MapViewController.m */,
 				705C0EC715EDA25F00DE3866 /* first.png */,
 				705C0EC915EDA25F00DE3866 /* first@2x.png */,
 				705C0ECB15EDA25F00DE3866 /* SecondViewController.h */,
@@ -188,7 +192,7 @@
 			files = (
 				705C0EBC15EDA25F00DE3866 /* main.m in Sources */,
 				705C0EC015EDA25F00DE3866 /* AppDelegate.m in Sources */,
-				705C0EC615EDA25F00DE3866 /* FirstViewController.m in Sources */,
+				705C0EC615EDA25F00DE3866 /* MapViewController.m in Sources */,
 				705C0ECD15EDA25F00DE3866 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +309,7 @@
 				705C0ED615EDA25F00DE3866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
