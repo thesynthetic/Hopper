@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		704071091613C19200D58377 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 704071081613C19200D58377 /* Default-568h@2x.png */; };
 		705C0EB015EDA25F00DE3866 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705C0EAF15EDA25F00DE3866 /* UIKit.framework */; };
 		705C0EB215EDA25F00DE3866 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705C0EB115EDA25F00DE3866 /* Foundation.framework */; };
 		705C0EB415EDA25F00DE3866 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705C0EB315EDA25F00DE3866 /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		704071081613C19200D58377 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		705C0EAB15EDA25F00DE3866 /* Hopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		705C0EAF15EDA25F00DE3866 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		705C0EB115EDA25F00DE3866 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -107,6 +109,7 @@
 				705C0ECC15EDA25F00DE3866 /* SecondViewController.m */,
 				705C0ECE15EDA25F00DE3866 /* second.png */,
 				705C0ED015EDA25F00DE3866 /* second@2x.png */,
+				704071081613C19200D58377 /* Default-568h@2x.png */,
 				705C0EB615EDA25F00DE3866 /* Supporting Files */,
 			);
 			path = Hopper;
@@ -180,6 +183,7 @@
 				705C0ECA15EDA25F00DE3866 /* first@2x.png in Resources */,
 				705C0ECF15EDA25F00DE3866 /* second.png in Resources */,
 				705C0ED115EDA25F00DE3866 /* second@2x.png in Resources */,
+				704071091613C19200D58377 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +245,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -261,7 +265,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -275,6 +279,7 @@
 				GCC_PREFIX_HEADER = "Hopper/Hopper-Prefix.pch";
 				INFOPLIST_FILE = "Hopper/Hopper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -286,6 +291,7 @@
 				GCC_PREFIX_HEADER = "Hopper/Hopper-Prefix.pch";
 				INFOPLIST_FILE = "Hopper/Hopper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
