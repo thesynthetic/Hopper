@@ -26,6 +26,10 @@
     locationManager.distanceFilter = kCLDistanceFilterNone;
     locationManager.delegate = self;
     [locationManager startUpdatingLocation];
+    CourtAnnotation *court = [[CourtAnnotation alloc] init];
+    [map addAnnotation:court];
+    
+
 }
 
 - (void)viewDidUnload
