@@ -54,16 +54,32 @@
                                     <action selector="updateLocationButton:" destination="nbq-4I-3nU" eventType="touchUpInside" id="ZkU-Bq-xtZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubK-N1-FD3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="ShI-2O-WXf"/>
+                                    <constraint firstAttribute="height" constant="33" id="ysI-Ro-dzz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="Refresh in map">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="54L-tL-x5W" firstAttribute="bottom" secondItem="u0d-Pc-5u5" secondAttribute="bottom" type="default" id="01h-AJ-EP1"/>
-                            <constraint firstAttribute="bottom" secondItem="uAB-Rb-ARn" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="I8p-iI-FEq"/>
-                            <constraint firstItem="uAB-Rb-ARn" firstAttribute="leading" secondItem="u0d-Pc-5u5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Mkg-Ne-gmi"/>
-                            <constraint firstAttribute="bottom" secondItem="l2j-4f-S31" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="UX9-Fm-1Ij"/>
+                            <constraint firstAttribute="bottom" secondItem="uAB-Rb-ARn" secondAttribute="bottom" constant="12" type="user" id="I8p-iI-FEq"/>
+                            <constraint firstItem="uAB-Rb-ARn" firstAttribute="leading" secondItem="u0d-Pc-5u5" secondAttribute="leading" constant="12" type="user" id="Mkg-Ne-gmi"/>
+                            <constraint firstItem="l2j-4f-S31" firstAttribute="centerY" secondItem="ubK-N1-FD3" secondAttribute="centerY" type="default" id="RwA-1q-Ios"/>
+                            <constraint firstAttribute="bottom" secondItem="l2j-4f-S31" secondAttribute="bottom" constant="12" type="user" id="UX9-Fm-1Ij"/>
                             <constraint firstItem="54L-tL-x5W" firstAttribute="trailing" secondItem="u0d-Pc-5u5" secondAttribute="trailing" type="default" id="Z73-UG-SY2"/>
-                            <constraint firstAttribute="trailing" secondItem="l2j-4f-S31" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="aaq-Mn-mZ8"/>
+                            <constraint firstAttribute="trailing" secondItem="l2j-4f-S31" secondAttribute="trailing" constant="12" type="user" id="aaq-Mn-mZ8"/>
                             <constraint firstItem="54L-tL-x5W" firstAttribute="leading" secondItem="u0d-Pc-5u5" secondAttribute="leading" type="default" id="dJK-96-iLP"/>
+                            <constraint firstItem="ubK-N1-FD3" firstAttribute="centerX" secondItem="54L-tL-x5W" secondAttribute="centerX" type="default" id="lM1-Tj-EJe"/>
                             <constraint firstItem="54L-tL-x5W" firstAttribute="top" secondItem="u0d-Pc-5u5" secondAttribute="top" type="default" id="uww-Qc-JsO"/>
                         </constraints>
                     </view>
